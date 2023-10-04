@@ -4,7 +4,8 @@ let arrayManual = new Array(size);
 
 for (let i = 0; i < arrayManual.length; i++) {
 
-    arrayManual[i] = defaultvalue;
+    arrayManual[i] = defaultValue;
+    console.log(arrayManual);
 }
 
 console.log(arrayManual);
