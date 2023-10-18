@@ -1,15 +1,17 @@
 const size = 50;
 const defaultValue = 0;
+
 let arrayManual = new Array(size);
 
-for (let i = 0; i < arrayManual.length; i++) {
+function llenarArray(array){
 
-    arrayManual[i] = defaultValue;
-    console.log(arrayManual);
+    for (let i = 0; i < array.length; i++) {
+
+        array[i] = defaultValue;
+    }
+
+    return array;
 }
 
-console.log(arrayManual);
-
-let arrPro = new Array(size);
-arrPro.fill(defaultValue);
-console.log(arrPro);
+console.log(arrayManual.fill(defaultValue));
+console.log(llenarArray(arrayManual));
